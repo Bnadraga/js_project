@@ -1,0 +1,47 @@
+.card-two {
+  &__title {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding-top: 36px;
+    margin-bottom: 36px;
+  }
+  &__input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    padding-right: 0px;
+    background-color: $inputBackgroundColor;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    font-family: 'Montserrat';
+  }
+  &__form {
+    display: flex;
+    margin-right: 100px;
+  }
+  &__btn {
+    cursor: pointer;
+    margin-left: -35px;
+    border: none;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    background-color: $primaryTextColor;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  }
+  &__text {
+    font-size: 12px;
+    color: $correctAnswerTextColor;
+  }
+  &__content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__line {
+    width: 536px;
+    padding-top: 36px;
+    border-bottom: 1px solid $primaryTextColor;
+    margin: 0 auto;
+  }
+}

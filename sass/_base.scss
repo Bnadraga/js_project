@@ -1,0 +1,114 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../images/background.png);
+  background-size: 100%;
+  background-position: center;
+}
+.container {
+  max-width: 1090px;
+  padding: 0 175px;
+  margin: 0 auto;
+  background-color: $primaryBackgroundColor;
+  color: $primaryTextColor;
+}
+
+.dark-theme {
+  color: $primaryBackgroundColor;
+  background-color: rgb(138, 132, 132);
+  .pool {
+    background-color: rgb(75, 128, 75);
+  }
+  input {
+    background-color: rgb(90, 90, 90);
+    color: $primaryBackgroundColor;
+  }
+  a {
+    color: $primaryBackgroundColor;
+  }
+  p {
+    color: white;
+  }
+  .modal {
+    background-color: rgb(54, 54, 54);
+  }
+  #result {
+    color: white;
+  }
+  h2 {
+    color: white;
+  }
+  .footer-modal {
+    background-color: rgb(54, 54, 54);
+  }
+  .card-ten__item {
+    background-color: rgb(54, 54, 54);
+  }
+  .dino-points {
+    color: black;
+    font-weight: 700;
+  }
+  .dino-container {
+    background-color: rgb(64, 46, 224);
+  }
+  .header__select-link {
+    background-color: rgb(54, 54, 54);
+
+    &:hover {
+      color: rgb(54, 54, 54);
+    }
+  }
+  .header__select {
+    border: 1px solid white;
+    background-color: rgb(54, 54, 54);
+  }
+  .header__text {
+    color: white;
+  }
+  .logo {
+    fill: white;
+  }
+  .card-four__input {
+    background-color: rgb(90, 90, 90);
+    color: $primaryBackgroundColor;
+  }
+}
+.light-theme {
+  background-color: $primaryBackgroundColor;
+  color: $primaryTextColor;
+}
+input {
+  font-size: 12px;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  width: 100%;
+}
