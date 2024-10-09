@@ -1,0 +1,113 @@
+.card-nine {
+  background-color: $primaryBackgroundColor;
+
+  .border {
+    display: flex;
+    margin: 0 auto;
+    background-color: $primaryTextColor;
+    width: 536px;
+    margin-bottom: 36px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin: 36px 0px;
+    text-align: center;
+  }
+
+  &__div {
+    display: flex;
+    height: 300px;
+    align-items: center;
+  }
+
+  &__card-nine {
+    margin: 0px 115px;
+    border-radius: 20px;
+    display: flex;
+  }
+
+  &__button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    height: 100px;
+  }
+
+  &__position {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  &__p {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    margin-top: 5px;
+  }
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-nine__button:disabled {
+  cursor: not-allowed;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.mini-line {
+  display: flex;
+  width: 174px;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.line {
+  width: 18px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #d9d9d9;
+  transition: width 250ms ease-in-out;
+}
+
+.line.active {
+  width: 30px;
+  background-color: #797979;
+}
+
+.images {
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+}
+
+.card-nine__img-wrap{
+  display: flex;
+}
+
+.arrow {
+  background-color: white;
+  display: flex;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 36px;
+  color: #000;
+}

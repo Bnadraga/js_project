@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/sass/index.css" />
+    <link rel="stylesheet" href="css/index.min.css" />
     <script type="module" src="/js/header.js"></script>
     <script type="module" src="/js/card-one.js"></script>
     <script type="module" src="/js/card-two.js"></script>
@@ -31,7 +31,7 @@
         <ul class="header__list">
           <li class="header__item">
             <a href="./index.html">
-              <svg class="logo" width="93px" height="38px">
+              <svg class="logo" width="93" height="38">
                 <use href="./images/symbol-defs.svg#icon-logo"></use>
               </svg>
             </a>
@@ -42,7 +42,9 @@
                 <button type="button" class="header__text">Інтерактив</button>
                 <ul class="header__select">
                   <li class="header__select-item">
-                    <a href="#" id="header-all" class="header__select-link">Усe</a>
+                    <a href="#" id="header-all" class="header__select-link"
+                      >Усe</a
+                    >
                   </li>
                   <li class="header__select-item">
                     <a href="#" id="header-nums" class="header__select-link"
@@ -62,7 +64,7 @@
                 </ul>
               </li>
               <li class="header__nav-item">
-                <a class="header__link" width="100px" href="index.html#card-nine"
+                <a class="header__link" href="index.html#card-nine"
                   >Наша команда</a
                 >
               </li>
@@ -74,16 +76,22 @@
           <li class="header__item">
             <div class="header__wrap">
               <button id="header-btn" class="header__btn">
-                <img width="40px" height="20px" id="header-theme" src="./images/dark-version.png" alt="">
+                <img
+                  width="40"
+                  height="20"
+                  id="header-theme"
+                  src="./images/dark-version.png"
+                  alt="image"
+                />
               </button>
               <p class="header__btn-text">Вітаємо, User!</p>
               <button type="button" class="header__open-modal" data-modal-open>
                 <img
-                  width="20px"
-                  height="20px"
+                  width="20"
+                  height="20"
                   class="header__img"
                   src="./images/earth.png"
-                  alt=""
+                  alt="image"
                 />
               </button>
               <div class="backdrop is-hidden" data-modal>
@@ -93,14 +101,18 @@
                     class="modal__close-button"
                     data-modal-close
                   >
-                    <svg width="15px" height="15px">
-                      <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+                    <svg width="15" height="15">
+                      <use
+                        href="./images/symbol-defs.svg#icon-close-modal"
+                      ></use>
                     </svg>
                   </button>
                   <p class="modal__text">
-                    Привіт! <br />Ви потрапили на сайт інтерактивних ігор та завдань
+                    Привіт! <br />Ви потрапили на сайт інтерактивних ігор та
+                    завдань
                     <br />
-                    Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+                    Надіємось, що вам сподобається і ви отримаєте позитивні
+                    емоції!
                     <br />
                     Бажаємо Вам гарно провести час!
                   </p>
@@ -129,9 +141,14 @@
         <h3 class="card-one__text">Перевір в який рік ти народився</h3>
         <div class="card-one__wrap">
           <form class="card-one__form">
-            <input type="number" id="birthYear" class="card-one__input" placeholder="Введіть рік народження"/>
+            <input
+              type="number"
+              id="birthYear"
+              class="card-one__input"
+              placeholder="Введіть рік народження"
+            />
             <button id="checkButton" class="card-one__button">
-              <svg width="15px" height="15px">
+              <svg width="15" height="15">
                 <use href="./images/symbol-defs.svg#icon-lupa"></use>
               </svg>
             </button>
@@ -147,17 +164,17 @@
         <div class="card-two__content">
           <form class="card-two__form">
             <input
-            type="number"
-            id="card-two-input"
-            class="card-two__input"
-            placeholder="Введіть число"
-            required
-          />
-          <button class="card-two__btn" id="card-two-btn" type="button">
-            <svg width="15px" height="15px">
-              <use href="./images/symbol-defs.svg#icon-lupa"></use>
-            </svg>
-          </button>
+              type="number"
+              id="card-two-input"
+              class="card-two__input"
+              placeholder="Введіть число"
+              required
+            />
+            <button class="card-two__btn" id="card-two-btn" type="button">
+              <svg width="15" height="15">
+                <use href="./images/symbol-defs.svg#icon-lupa"></use>
+              </svg>
+            </button>
           </form>
           <p class="card-two__text">Спробуй свою удачу :- )</p>
         </div>
@@ -167,27 +184,37 @@
     <section class="card-three">
       <div class="container">
         <h2 class="card-three__text">Камінь - ножиці - папір</h2>
-    
+
         <div class="card-three__form">
           <button class="card-three__stone" id="card-three-stone" type="button">
             <img src="./images/stone.png" alt="камінь" />
           </button>
-          <button class="card-three__scissors" id="card-three-scissors" type="button">
+          <button
+            class="card-three__scissors"
+            id="card-three-scissors"
+            type="button"
+          >
             <img src="./images/scissors.png" alt="ножиці" />
           </button>
           <button class="card-three__paper" id="card-three-paper" type="button">
             <img src="./images/paper.png" alt="папір" />
           </button>
         </div>
-    
+
         <div class="card-three__list">
           <h3 class="card-three__item">Рахунок;</h3>
-          <p class="card-three__item">Комп’ютер - <samp id="card-three-item">0</samp></p>
-          <p class="card-three__item">Ви - <samp id="card-three-item">0</samp></p>
+          <p class="card-three__item">
+            Комп’ютер - <samp id="card-three-item">0</samp>
+          </p>
+          <p class="card-three__item">
+            Ви - <samp id="card-three-item">0</samp>
+          </p>
         </div>
         <h4 class="card-three__block" id="card-three-block"></h4>
-    
-        <button class="card-three__btn" id="card-three-btn">Варіант комп’ютера</button>
+
+        <button class="card-three__btn" id="card-three-btn">
+          Варіант комп’ютера
+        </button>
         <div class="card-three__line"></div>
       </div>
     </section>
@@ -226,17 +253,15 @@
     <section class="card-five">
       <div class="card-five__link container">
         <h2 class="card-five__title">Калькулятор часу</h2>
-    
-        <form action="">
+
+        <form>
           <input
             class="card-five__input"
             type="text"
             id="name"
             placeholder="Введіть число"
           />
-          <button class="card-five__btn">
-            <!-- <img class="card-five-icon" src="Group 104.png" alt="" /> -->
-          </button>
+          <button class="card-five__btn"></button>
           <div class="card-two__line"></div>
         </form>
       </div>
@@ -251,8 +276,8 @@
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 50 50"
-              width="35px"
-              height="35px"
+              width="35"
+              height="35"
             >
               <path
                 d="M 25 2 A 1.0001 1.0001 0 1 0 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 13.390466 46 4 36.609534 4 25 C 4 18.307314 7.130711 12.364806 12 8.5195312 L 12 15 A 1.0001 1.0001 0 1 0 14 15 L 14 6.5507812 L 14 5 L 4 5 A 1.0001 1.0001 0 1 0 4 7 L 10.699219 7 C 5.4020866 11.214814 2 17.712204 2 25 C 2 37.690466 12.309534 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z"
@@ -261,14 +286,8 @@
           </button>
         </div>
         <p class="dino-points"></p>
-        <img
-          class="dino-player"
-          src="./images/mykola.png"
-        />
-        <img
-          class="dino-cactus"
-          src="./images/tree.png"
-        />
+        <img class="dino-player" src="./images/mykola.png" alt="image" />
+        <img class="dino-cactus" src="./images/tree.png" alt="image" />
       </div>
     </section>
     <section class="card-seven">
@@ -311,233 +330,331 @@
         <div class="card-two__line"></div>
       </div>
     </section>
-    <section class="card-nine" id="card-nine">
-      <div class="container">
-      <h3>Наша команда</h3>
-      <div class="div-card">
-          <div class="one">
-              <!-- <img src="" alt=""> -->
-              <h4>Ім'я студента</h4>
-              <p>Інформація про роботу яку він виконав</p>
-          </div>
-          <div class="two">
-  <!--             <img src=""
-                   alt=""> -->
-              <h4>Ім'я студента</h4>
-              <p>Інформація про роботу яку він виконав</p>
-          </div>
-          <div class="three">
-  <!--             <img src=""
-                   alt=""> -->
-              <h4>Ім'я студента</h4>
-              <p>Інформація про роботу яку він виконав</p>
-          </div>
-          <div class="four">
-  <!--             <img src=""
-                   alt=""> -->
-              <h4>Ім'я студента</h4>
-              <p>Інформація про роботу яку він виконав</p>
-          </div>
-          <div class="five">
-  <!--             <img src=""
-                   alt=""> -->
-              <h4>Ім'я студента</h4>
-              <p>Інформація про роботу яку він виконав</p>
-          </div>
-          <div class="six">
-  <!--             <img src=""
-                   alt=""> -->
-              <h4>Ім'я студента</h4>
-              <p>Інформація про роботу яку він виконав</p>
-          </div>
-          <ul>
-              <li class="mini-line"></li>
-              <li class="mini-line"></li>
-              <li class="mini-line"></li>
-          </ul>
-          <button class="our-team-btn"></button>
-          <button class="our-team-btn"></button>
-          <div class="line"></div>
-      </div>
-      </div>
-  </section>
-  <section class="card-ten">
-    <div class="container">
-      <div class="card-two__line"></div>
-      <h2 class="card-ten__title">Обери вченого/их</h2>
-      <ul class="card-ten__list">
-        <li class="card-ten__item">
-          <p class="card-ten__text">Albert Einstein</p>
-        </li>
-        <li class="card-ten__item">
-          <p class="card-ten__text">Isaac Newton</p>
-        </li>
-        <li class="card-ten__item">
-          <p class="card-ten__text">Galileo Galilei</p>
-        </li>
-        <li class="card-ten__item">
-          <p class="card-ten__text">Marie Curie</p>
-        </li>
-        <li class="card-ten__item">
-          <p class="card-ten__text">Johannes Kepler</p>
-        </li>
-        <li class="card-ten__item">
-          <p class="card-ten__text">Nicolaus Copernicus</p>
-        </li>
-        <li class="card-ten__item">
-          <p class="card-ten__text">Max Planck</p>
-        </li>
-        <li class="card-ten__item">
-          <p class="card-ten__text">Katherine Blodgett</p>
-        </li>
-        <li class="card-ten__item">
-          <p class="card-ten__text">Ada Lovelace</p>
-        </li>
-        <li class="card-ten__item">
-          <p class="card-ten__text">Sarah E. Goode</p>
-        </li>
-        <li class="card-ten__item">
-          <p class="card-ten__text">Lise Meitner</p>
-        </li>
-        <li class="card-ten__item">
-          <p class="card-ten__text">Hanna Hammarström</p>
-        </li>
-      </ul>
-      <ul class="card-ten__button">
-        <li class="card-ten__wrap">
-          <ul class="card-ten__button-one">
-            <li class="card-ten__button-item">
-              <button class="card-ten__btn" id="btn1" type="button">
-                Які вчені народилися в 19 ст.
-              </button>
-            </li>
-            <li class="card-ten__button-item">
-              <button class="card-ten__btn" id="btn2" type="button">
-                Відсортувати вчених за алфавітом
-              </button>
-            </li>
-            <li class="card-ten__button-item">
-              <button class="card-ten__btn" id="btn3" type="button">
-                Відсортувати вчених за кількістю прожитих років
-              </button>
-            </li>
-            <li class="card-ten__button-item">
-              <button class="card-ten__btn" id="btn4" type="button">
-                Знайти вченого, який народився найпізніше
-              </button>
-            </li>
-          </ul>
-          <ul class="card-ten__button-two">
-            <li class="card-ten__button-item">
-              <button class="card-ten__btn" id="btn5" type="button">
-                Знайти рік народження Albert Einshtein
-              </button>
-            </li>
-            <li class="card-ten__button-item">
-              <button class="card-ten__btn" id="btn6" type="button">
-                Знайти вчених, прізвища яких починаються на на літеру “С”
-              </button>
-            </li>
-            <li class="card-ten__button-item">
-              <button class="card-ten__btn" id="btn7" type="button">
-                Видалити всіх вчених, ім’я яких починається на “А”
-              </button>
-            </li>
-            <li class="card-ten__button-item">
-              <button class="card-ten__btn" id="btn8" type="button">
-                Знайти вченого, який прожив найдовше і вченого, який прожив найменше
-              </button>
-            </li>
-          </ul>
-        </li>
-        <li class="card-ten__last-btn">
-          <button class="card-ten__btn" id="btn9" type="button">
-            Знайти вчених, в яких співпадають перші літери імені і прізвища
-          </button>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <footer class="footer" id="footer">
-    <div class="container">
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a href="./index.html">
-            <svg class="logo" width="165px" height="70px">
-              <use href="./images/symbol-defs.svg#icon-logo"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__item">
-          <ul class="footer__contact">
-            <li class="footer__contact-item">
-              <p class="footer__contact-text">Тел: </p>
-              <a class="footer__link" href="tel:+381234567890"
-                > +38 (123) 456 78 90</a
-              >
-            </li>
-            <li class="footer__contact-item">
-              <p class="footer__contact-text">E-Mail: </p>
-              <a class="footer__link" href="mailto:codingmagic@gmail.com"
-                > codingmagic@gmail.com</a
-              >
-            </li>
-            <li class="footer__contact-item">
-              <p class="footer__contact-text">Facebook: </p>
-              <a class="footer__link" href="#"> CodingMagic</a>
-            </li>
-            <li class="footer__contact-item">
-              <p class="footer__contact-text">Twitter: </p>
-              <a class="footer__link" href="#"> CodingMagic</a>
-            </li>
-            <li class="footer__contact-item">
-              <p class="footer__contact-text">Instagram: </p>
-              <a class="footer__link" href="#"> CodingMagic</a>
-            </li>
-          </ul>
-        </li>
-        <li class="footer__item">
-          <div class="footer__subscribe">
-            <form class="footer__form">
-              <input
-                type="email"
-                required
-                id="footer-input"
-                class="footer__input"
-                placeholder="Ваша ел. адреса..."
+    <section id="9" class="card-nine container">
+      <div class="border"></div>
+      <h2 class="card-nine__title">Наша команда</h2>
+      <div class="card-nine__div">
+        <button class="card-nine__button" id="prevBtn">
+          <svg
+            class="arrow"
+            width="52"
+            height="102"
+            viewBox="0 0 52 102"
+            fill="none"
+            xmlns="svg"
+          >
+            <path d="M51 1L1 51L51 101" stroke="black" />
+          </svg>
+        </button>
+
+        <div class="card-nine__slider">
+          <div class="slide active">
+            <div class="card-nine__img-wrap">
+              <img
+                src="/images/image copy 3.png"
+                height="250"
+                alt="bogdan"
+                class="images"
               />
-              <button
-                type="submit"
-                class="footer__btn"
-                footer-modal-open
-                id="footer-btn"
-              >
-                Підписатись
-              </button>
-            </form>
-            <div class="backdrop is-hidden" footer-modal>
-              <div class="footer-modal">
-                <button
-                  type="button"
-                  class="footer-modal__close-button"
-                  footer-modal-close
-                >
-                  <svg width="15px" height="15px">
-                    <use href="./images/symbol-defs.svg#icon-close-modal"></use>
-                  </svg>
-                </button>
-                <h2 class="footer-modal__title">Дякую за підписку!</h2>
-              </div>
             </div>
-            <p class="footer__subtext">
-              *Підписавшись, Ви зможете ортимувати інформаццію про новинки на
-              сайті
+            <div class="card-nine__text-wrap">
+              <div class="name-align">
+                <span class="name">Bogdan Nadraga</span>
+              </div>
+              <ul class="card-nine__list">
+                <li class="card-nine__item">
+                  <p class="card-nine__position">TEAM LEAD</p>
+                </li>
+                <li class="card-nine__item">
+                  <p class="card-nine__p">- Header</p>
+                </li>
+                <li>
+                  <p class="card-nine__p">- Footer</p>
+                </li>
+                <li>
+                  <p class="card-nine__p">- Card-two</p>
+                </li>
+                <li>
+                  <p class="card-nine__p">- Card-eight</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="card-nine__img-wrap">
+              <img
+                src="/images/image copy 2.png"
+                height="250"
+                alt="roma"
+                class="images"
+              />
+            </div>
+
+            <div class="name-align">
+              <span class="name">Roma</span>
+            </div>
+            <p class="card-nine__p">
+              SCRAM MASTER <br />
+              <br />
+              - ? <br />
+              - ?<br />
+              - ?
             </p>
           </div>
-        </li>
-      </ul>
-    </div>
-  </footer>
-                                          
+          <div class="slide">
+            <div class="card-nine__img-wrap">
+              <img
+                src="/images/image copy 4.png"
+                height="250"
+                alt="sofia"
+                class="images"
+              />
+            </div>
+
+            <div class="name-align">
+              <span class="name">Sofia</span>
+            </div>
+
+            <p class="card-nine__p">
+              - Dino game <br />
+              - Silder <br />
+            </p>
+          </div>
+          <div class="slide">
+            <div class="card-nine__img-wrap">
+              <img
+                src="/images/image.png"
+                height="250"
+                alt="daiil"
+                class="images"
+              />
+            </div>
+
+            <div class="name-align">
+              <span class="name">Daniil</span>
+            </div>
+            <p class="card-nine__p">- ? <br /></p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="card-nine__img-wrap">
+            <img
+              src="/images/image copy.png"
+              height="250"
+              alt="arthur"
+              class="images"
+            />
+          </div>
+          <div class="name-align">
+            <span class="name">Arthur</span>
+          </div>
+          <p class="card-nine__p">
+            - ? <br />
+            - ? <br />
+          </p>
+        </div>
+
+        <button class="card-nine__button" id="nextBtn">
+          <svg
+            class="arrow"
+            width="52"
+            height="102"
+            viewBox="0 0 52 102"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M1 1L51 51L1 101" stroke="black" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mini-line">
+        <div class="line active"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </section>
+    <section class="card-ten">
+      <div class="container">
+        <div class="card-two__line"></div>
+        <h2 class="card-ten__title">Обери вченого/их</h2>
+        <ul class="card-ten__list">
+          <li class="card-ten__item">
+            <p class="card-ten__text">Albert Einstein</p>
+          </li>
+          <li class="card-ten__item">
+            <p class="card-ten__text">Isaac Newton</p>
+          </li>
+          <li class="card-ten__item">
+            <p class="card-ten__text">Galileo Galilei</p>
+          </li>
+          <li class="card-ten__item">
+            <p class="card-ten__text">Marie Curie</p>
+          </li>
+          <li class="card-ten__item">
+            <p class="card-ten__text">Johannes Kepler</p>
+          </li>
+          <li class="card-ten__item">
+            <p class="card-ten__text">Nicolaus Copernicus</p>
+          </li>
+          <li class="card-ten__item">
+            <p class="card-ten__text">Max Planck</p>
+          </li>
+          <li class="card-ten__item">
+            <p class="card-ten__text">Katherine Blodgett</p>
+          </li>
+          <li class="card-ten__item">
+            <p class="card-ten__text">Ada Lovelace</p>
+          </li>
+          <li class="card-ten__item">
+            <p class="card-ten__text">Sarah E. Goode</p>
+          </li>
+          <li class="card-ten__item">
+            <p class="card-ten__text">Lise Meitner</p>
+          </li>
+          <li class="card-ten__item">
+            <p class="card-ten__text">Hanna Hammarström</p>
+          </li>
+        </ul>
+        <ul class="card-ten__button">
+          <li class="card-ten__wrap">
+            <ul class="card-ten__button-one">
+              <li class="card-ten__button-item">
+                <button class="card-ten__btn" id="btn1" type="button">
+                  Які вчені народилися в 19 ст.
+                </button>
+              </li>
+              <li class="card-ten__button-item">
+                <button class="card-ten__btn" id="btn2" type="button">
+                  Відсортувати вчених за алфавітом
+                </button>
+              </li>
+              <li class="card-ten__button-item">
+                <button class="card-ten__btn" id="btn3" type="button">
+                  Відсортувати вчених за кількістю прожитих років
+                </button>
+              </li>
+              <li class="card-ten__button-item">
+                <button class="card-ten__btn" id="btn4" type="button">
+                  Знайти вченого, який народився найпізніше
+                </button>
+              </li>
+            </ul>
+            <ul class="card-ten__button-two">
+              <li class="card-ten__button-item">
+                <button class="card-ten__btn" id="btn5" type="button">
+                  Знайти рік народження Albert Einshtein
+                </button>
+              </li>
+              <li class="card-ten__button-item">
+                <button class="card-ten__btn" id="btn6" type="button">
+                  Знайти вчених, прізвища яких починаються на на літеру “С”
+                </button>
+              </li>
+              <li class="card-ten__button-item">
+                <button class="card-ten__btn" id="btn7" type="button">
+                  Видалити всіх вчених, ім’я яких починається на “А”
+                </button>
+              </li>
+              <li class="card-ten__button-item">
+                <button class="card-ten__btn" id="btn8" type="button">
+                  Знайти вченого, який прожив найдовше і вченого, який прожив
+                  найменше
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="card-ten__last-btn">
+            <button class="card-ten__btn" id="btn9" type="button">
+              Знайти вчених, в яких співпадають перші літери імені і прізвища
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="./index.html">
+              <svg class="logo" width="165" height="70">
+                <use href="./images/symbol-defs.svg#icon-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <ul class="footer__contact">
+              <li class="footer__contact-item">
+                <p class="footer__contact-text">Тел:</p>
+                <a class="footer__link" href="tel:+381234567890">
+                  +38 (123) 456 78 90</a
+                >
+              </li>
+              <li class="footer__contact-item">
+                <p class="footer__contact-text">E-Mail:</p>
+                <a class="footer__link" href="mailto:codingmagic@gmail.com">
+                  codingmagic@gmail.com</a
+                >
+              </li>
+              <li class="footer__contact-item">
+                <p class="footer__contact-text">Facebook:</p>
+                <a class="footer__link" href="#"> CodingMagic</a>
+              </li>
+              <li class="footer__contact-item">
+                <p class="footer__contact-text">Twitter:</p>
+                <a class="footer__link" href="#"> CodingMagic</a>
+              </li>
+              <li class="footer__contact-item">
+                <p class="footer__contact-text">Instagram:</p>
+                <a class="footer__link" href="#"> CodingMagic</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <div class="footer__subscribe">
+              <form class="footer__form">
+                <input
+                  type="email"
+                  required
+                  id="footer-input"
+                  class="footer__input"
+                  placeholder="Ваша ел. адреса..."
+                />
+                <button
+                  type="submit"
+                  class="footer__btn"
+                  footer-modal-open
+                  id="footer-btn"
+                >
+                  Підписатись
+                </button>
+              </form>
+              <div class="backdrop is-hidden" footer-modal>
+                <div class="footer-modal">
+                  <button
+                    type="button"
+                    class="footer-modal__close-button"
+                    footer-modal-close
+                  >
+                    <svg width="15" height="15">
+                      <use
+                        href="./images/symbol-defs.svg#icon-close-modal"
+                      ></use>
+                    </svg>
+                  </button>
+                  <h2 class="footer-modal__title">Дякую за підписку!</h2>
+                </div>
+              </div>
+              <p class="footer__subtext">
+                *Підписавшись, Ви зможете ортимувати інформаццію про новинки на
+                сайті
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
